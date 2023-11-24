@@ -1,9 +1,13 @@
 let taxiFareApiUrl = 'https://taxifare-ne4yelgixa-uc.a.run.app/predict'; // replace with your API endpoint
 const centralCoordinates = [-74.00597, 40.71427]; // starting position [lng, lat]
+// comment to be deleted
 
 if (window.location.href.includes('https://taxifare.lewagon.com')) {
   taxiFareApiUrl = 'https://taxifare.lewagon.ai/predict';
 }
+
+console.log(taxiFareApiUrl)
+
 
 mapboxgl.accessToken = 'pk.eyJ1Ijoia3Jva3JvYiIsImEiOiJja2YzcmcyNDkwNXVpMnRtZGwxb2MzNWtvIn0.69leM_6Roh26Ju7Lqb2pwQ';
 
